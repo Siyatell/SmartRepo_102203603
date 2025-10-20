@@ -1,0 +1,97 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  color: white;
+  padding: 20px 0;
+}
+
+.search-box {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.search-box input {
+  width: 60%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-box button {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-left: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #4338ca;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 40px 40px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #111;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  margin: 8px 0;
+}
+
+.price {
+  color: #4f46e5;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+footer {
+  text-align: center;
+  background: #f3f4f6;
+  padding: 15px 0;
+  color: #555;
+  font-size: 14px;
+}

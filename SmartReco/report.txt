@@ -1,0 +1,71 @@
+SmartReco Project Report
+
+Introduction
+SmartReco is an AI-powered product recommendation system. It combines NLP-based recommendations with AI-generated product descriptions. It also includes analytics for product insights.
+
+Objectives
+
+Build a product recommender
+
+Integrate AI for creative descriptions
+
+Provide analytics and visualizations
+
+Expose a REST API and a frontend
+
+Maintain modular and deployable architecture
+
+Dataset
+
+product.csv includes: Product ID, Name, Brand, Description, Price, Category, Image URL, Manufacturer, Dimensions, Material, Color, Unique ID
+
+System Architecture
+
+Frontend: HTML, CSS, JS for user interface
+
+Backend: FastAPI server exposing endpoints
+
+Recommender Module: Returns top k similar products
+
+GenAI Module: GPT-2 for AI-generated descriptions
+
+Analytics: product_analysis.ipynb
+
+Vector Store & Image Features: Optional for optimization
+
+Implementation
+
+Backend: app.py handles endpoints
+
+Recommendation: Matches query to product descriptions
+
+AI Descriptions: Lightweight GPT-2 model
+
+Analytics: Matplotlib/Seaborn plots
+
+Frontend: Fetches API results and displays products
+
+Deployment
+
+Backend: Deployable via Heroku, Railway, or Vercel
+
+Frontend: Can be served via GitHub Pages or backend
+
+Challenges & Solutions
+
+Model loading latency → fallback in GenAI
+
+CORS issues → FastAPI middleware
+
+Limited dataset → optimized similarity search
+
+Future Work
+
+Image-based recommendation
+
+Personalized recommendations
+
+Interactive analytics dashboard
+
+Conclusion
+SmartReco provides a complete product discovery solution combining AI recommendations, generated descriptions, and analytics.

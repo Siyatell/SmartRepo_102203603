@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartReco | Product Recommender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🛒 SmartReco</h1>
+    <p>Find the best products using AI-powered recommendations</p>
+  </header>
+
+  <main>
+    <section class="search-box">
+      <input
+        type="text"
+        id="query"
+        placeholder="Enter a product name (e.g., modern wooden dining table)"
+      />
+      <button onclick="getRecommendations()">Recommend</button>
+    </section>
+
+    <section id="results" class="results">
+      <!-- Product cards will appear here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>SmartReco © 2025 | Built with ❤️ using FastAPI & Transformers</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
